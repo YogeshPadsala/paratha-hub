@@ -1,0 +1,30 @@
+#goodfood-cta {
+	position: relative;
+
+}
+#goodfood-cta:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /*width: 20em;
+  height: 20em;*/
+  background: #0a0909d9;
+}
+.inline-block{
+	display: inline-block;
+}
+.social-media a{
+	color: #fff;
+}
+
+@media(max-width: 576px){	
+
+.about-inner-box1 img{
+	width: 100%;
+}
+
+}
