@@ -1,0 +1,1884 @@
+/*-----------------------------------------------------------------------------------
+
+    Template Name: La Capelette - Restaurant Template
+    Template URI: http://lacapelette.designershare.net/
+    Description: HTML5 Bootstrap Template
+    Author: Petia Koleva
+    Author URI:  http://designify.me
+    Version: 2.0
+
+-----------------------------------------------------------------------------------
+
+CSS INDEX
+===================
+
+1. Global Styles /including some overwrites/
+	1.1. Colours
+2. Navigation
+3. Global Header Styles
+	3.1. Fullwidth Header
+	3.2. Medium Header
+	3.3. Header Images
+4. Global Styles for Sections
+5. About the Restaurant /Home Page/
+6. Specials /Home Page/
+7. Bakery CTA /Home Page/
+8. Restaurant Menu /Home Page/ 
+9. Wine Selection /Home Page/
+10. Recipes /Home Page/
+11. Good Food CTA /Home Page/
+12. Events /Home Page/
+13. Food Blog /Home Page/
+14. Newsletter
+15. Reservations
+16. Menu Page
+	16.1. Starters
+	16.2. Salads
+	16.3. Main Courses
+	16.4 Desserts
+17. All Recipes Page	
+18. Single Recipe Page
+19. Blog Page
+20. Events Page
+21. Wines Page /Wine Sections/
+22. Miscellaneous
+	22.1. Labels
+	22.2  Buttons
+	22.3. Paddings
+	22.4. Margins
+	22.5. Back To Top Link
+-----------------------------------------------------------------------------------*/
+
+/* ---------------------------
+1. Global Styles /including some overwrites/
+-----------------------------*/
+html, body {
+	height: 100%;
+}
+body {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: 500;
+	color: #0a0909;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: 500;
+	letter-spacing: 1px;
+}
+.lead {
+	font-size: 18px;
+}
+.lead-md {
+	font-size: 16px;
+}
+.lead-sm {
+	font-size: 14px;
+}
+a {
+	color: #0a0909;
+	text-decoration: none;
+}
+a:hover, a:focus {
+	color: #0a0909;
+	text-decoration: underline;
+}
+a:focus {
+	outline: none;
+	outline-offset: -2px;
+}
+body {
+	width: 100%;
+	height: 100%
+}
+html {
+	width: 100%;
+	height: 100%
+}
+hr {
+	border: 0;
+	border-top: 1px solid #eee
+}
+.brd-left {border-left:1px dotted #444;}
+.brd-right {border-right:1px dotted #444;}
+@media(max-width:767px) {
+.brd-left {border-left:0px dotted #444;}
+.brd-right {border-right:0px dotted #444;}}
+
+
+@media(min-width:767px) {
+.navbar {
+	padding: 20px 0;
+	-webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
+	-moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
+	transition: background .5s ease-in-out, padding .5s ease-in-out
+}
+}
+
+/* ---------------------------
+1.1. Colours
+-----------------------------*/
+.white {
+	color: #FFF;
+}
+.lightbg {
+	background: rgba(237,232,225,1);
+}
+
+/* ---------------------------
+2. Navigation
+-----------------------------*/
+@media (min-width: 768px) {
+#main-nav.navbar-default {
+	background: 0 0;
+	-webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
+	-moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
+	transition: background .5s ease-in-out, padding .5s ease-in-out;
+	border-color: transparent
+}
+#main-nav.navbar-default.top-nav-collapse {
+	padding: 0;
+	border-color: transparent;
+	background: rgba(10,9,9,1);
+}
+}
+#main-nav.navbar-default .nav li.active a {
+	color: #dea72d;
+}
+#main-nav .navbar-brand {
+	/* padding: 15px 5px; */
+}
+#main-nav .nav {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: 500;
+}
+#main-nav .nav > li > a {
+	padding: 25px 5px;
+	text-transform: uppercase;
+	color: #FFF;
+	letter-spacing: 1px;
+}
+#main-nav .nav > li > a.active {
+	color: #dea72d;
+}
+#main-nav .nav > li > a:hover, #main-nav .nav > li > a:focus, #main-nav .nav > li > a:active {
+	background: transparent;
+	color: #dea72d;
+}
+
+@media (max-width: 767px) {
+#main-nav.navbar-default {
+	background: #0a0909;
+	border-color: transparent;
+}
+#main-nav.navbar-default .navbar-toggle {
+	border-color: transparent;
+}
+#main-nav .navbar-brand > img {
+	width: 85%;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+	background-color: transparent;
+}
+#main-nav .navbar-brand {
+	padding: 7px 5px;
+}
+#main-nav.navbar-default .navbar-toggle .icon-bar {
+	background-color: #FFF;
+}
+#main-nav .nav > li > a {
+	padding: 5px;
+	margin-top: 10px
+}
+#main-nav.navbar-default .navbar-collapse, #main-nav.navbar-default .navbar-form {
+	border-color: transparent
+}
+}
+
+/* ---------------------------
+3. Global Header Styles
+-----------------------------*/
+header {
+	background-position: center center;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+header .header-text {
+	padding-top: 100px;
+	padding-bottom: 50px
+}
+
+@media (min-width: 992px) {
+header .header-text {
+	padding-top: 250px;
+	padding-bottom: 200px;
+}
+}
+
+@media (min-width:768px) and (max-width:991px) {
+header {
+	margin: 0
+}
+header .header-text {
+	padding-top: 200px;
+	padding-bottom: 200px;
+}
+}
+
+@media(max-width:767px) {
+header {
+	margin: 0
+}
+}
+
+/* ---------------------------
+3.1.Fullwidth Header
+-----------------------------*/
+header#fullwidth {
+	background-position: center center;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+header#fullwidth .header-text {
+	padding-top: 300px;
+	padding-bottom: 50px;
+}
+header#fullwidth .form-inline .form-control {
+	height: 46px;
+}
+
+@media (min-width: 992px) {
+header#fullwidth .header-text {
+	padding-top: 300px;
+	padding-bottom: 200px;
+}
+}
+
+/* ----------- Non-Retina Screens ----------- */
+@media screen
+and (min-device-width: 1200px)
+and (max-device-width: 1600px)
+and (-webkit-min-device-pixel-ratio: 1) {
+	header#fullwidth .header-text {
+		padding-top: 200px;
+		padding-bottom: 200px;
+	}
+}
+
+/* ----------- Retina Screens ----------- */
+@media screen
+and (min-device-width: 1200px)
+and (max-device-width: 1600px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (min-resolution: 192dpi) {
+	header#fullwidth .header-text {
+		padding-top: 200px;
+		padding-bottom: 200px;
+	}
+}
+
+header#fullwidth {
+	min-height: 100%; /* min. height for modern browser */
+	height: auto !important; /* important rule for modern Browser */
+	height: 100%; /* min. height for IE */
+	overflow: hidden !important; /* FF scroll-bar */
+}
+
+@media(max-width:767px) {
+header#fullwidth {
+	height: auto
+}
+header#fullwidth .header-text {
+	padding-top: 200px;
+	padding-bottom: 50px;
+}
+}
+
+@media(max-width:640px) {
+header#fullwidth {
+	height: auto
+}
+header#fullwidth .header-text {
+	padding-top: 110px;
+	padding-bottom: 50px;
+}
+}
+
+/* iPad styles */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+header#fullwidth .header-text {
+	padding-top: 200px;
+	padding-bottom: 200px;
+}
+}
+.info {
+	background: #0a0909;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 15px 0 10px;
+	color: #FFFFFF;
+	text-align: center;
+}
+.info h3 {
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 16px;
+	color: #dea72d
+}
+
+/* ---------------------------
+3.2. Medium Header
+-----------------------------*/
+header#medium {
+	background-position: center center;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover
+}
+header#medium .header-text {
+	padding-top: 100px;
+	padding-bottom: 100px
+}
+
+@media(min-width:768px) {
+header#medium .header-text {
+	padding-top: 210px;
+	padding-bottom: 210px;
+}
+}
+/* ---------------------------
+3.3. Header Images
+-----------------------------*/
+.lacapelette-intro {
+	background-image: url(../img/backgrounds/lacapelette-index.jpg);
+}
+.lacapelette-blog {
+	background-image: url(../img/backgrounds/lacapelette-blog.jpg);
+}
+.lacapelette-events {
+	background-image: url(../img/backgrounds/lacapelette-events.jpg);
+}
+.lacapelette-menu {
+	background-image: url(../img/backgrounds/menu-header-2.jpg);
+}
+.lacapelette-recipe {
+	background-image: url(../img/backgrounds/lacapelette-recipes.jpg);
+}
+.lacapelette-wine {
+	background-image: url(../img/backgrounds/wine-header.jpg);
+}
+
+/* ---------------------------
+4. Global Styles for Sections
+-----------------------------*/
+section {
+	padding: 100px 0;
+}
+section h2 {
+	text-transform: uppercase;
+	margin-bottom: 30px
+}
+section p {
+	font-size: 18px;
+}
+
+@media (max-width: 767px) {
+section {
+	padding: 75px 0;
+}
+}
+
+/* ---------------------------
+5. About the Restaurant /Home Page/
+-----------------------------*/
+section#about {padding:0}
+section#about {
+	text-align: center;
+	background: url(../img/backgrounds/about-background.jpg);
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+section#about .about-item {
+	background: rgba(237,232,225,0.95);
+}
+section#about .about-inner-box {
+	padding: 100px 50px;
+}
+
+@media (max-width: 767px) {
+section#about .about-inner-box {
+	padding: 50px 20px;
+}
+}
+
+/* ---------------------------
+6. Specials /Home Page/
+-----------------------------*/
+section#specials {
+	background: #f8f8f8
+}
+
+/* ---------------------------
+7. Bakery CTA /Home Page/
+-----------------------------*/
+section#bakery-cta {
+	text-align: center;
+	padding: 150px 0
+}
+section#bakery-cta {
+	background: url(../img/backgrounds/bakery-cta-background.jpg);
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+section#bakery-cta h2 {
+	font-size: 60px;
+	color: #FFFFFF
+}
+section#bakery-cta p {
+	font-size: 52px;
+	color: #FFFFFF
+}
+
+@media (max-width: 767px) {
+section#bakery-cta {
+	padding: 50px 0
+}
+section#bakery-cta h2 {
+	font-size: 24px;
+}
+section#bakery-cta p {
+	font-size: 21px;
+}
+}
+
+/* ---------------------------
+8. Restaurant Menu /Home Page/ 
+-----------------------------*/
+section#menu {
+	background: url(../img/backgrounds/menu-background.jpg);
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+section#menu h3 {
+	text-transform: uppercase;
+	text-align: left;
+	border-bottom: 2px solid #0a0909;
+	padding-bottom: 5px
+}
+section#menu .menu-list {
+	margin: 0px 0 0px
+}
+section#menu .menu-list-item {
+	display: block;
+	clear: both;
+	text-align: left
+}
+section#menu .menu-list-item h5 {
+	font-size: 16px;
+	line-height: 24px;
+	vertical-align: bottom;
+	font-weight: 500;
+	float: left;
+	max-width: 80%;
+	padding-right: 5px;
+	margin-bottom: 5px;
+	text-transform: uppercase
+}
+section#menu .menu-list-item p.price {
+	color: #dea72d;
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: 500;
+	display: inline-block;
+	vertical-align: bottom;
+	float: right;
+	padding-top: 8px;
+	padding-left: 5px;
+	margin-bottom: 10px
+}
+section#menu .dashed-line {
+	border-bottom: 1px dashed #0a0909;
+	height: 30px;
+	overflow: hidden;
+	display: block
+}
+
+/* ---------------------------
+9. Wine Selection /Home Page/
+-----------------------------*/
+section#wines {padding:0}
+section#wines {
+	color: #FFF
+}
+section#wines h2 {
+	color: #dea72d
+}
+section#wines {
+	text-align: center;
+	background: url(../img/backgrounds/wines-background.jpg);
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+section#wines .wine-item {
+	background: rgba(10,9,9,1);
+}
+section#wines .wine-inner-box {
+	padding: 100px 50px;
+}
+
+@media (max-width: 767px) {
+section#wines .wine-inner-box {
+	padding: 50px 20px;
+}
+}
+
+/* ---------------------------
+10. Recipes /Home Page/
+-----------------------------*/
+section#recipes {
+	background: url(../img/backgrounds/menu-background.jpg);
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+	text-align: center;
+}
+section#recipes .recipe-item {
+	margin: 15px 0;
+}
+section#recipes .recipe-item figure {
+	margin: 0 0 25px;
+}
+section#recipes .recipe-item img {
+	-webkit-filter: sepia(0.2);
+	-moz-filter: sepia(0.2);
+	-o-filter: sepia(0.2);
+	-ms-filter: sepia(0.2);
+	filter: sepia(0.2)
+}
+section#recipes h3.recipe-name {
+	font-size: 18px;
+	margin-top: 20px;
+	font-weight: 700
+}
+/* ========== Recipe Items ========== */
+figure.recipe {
+	color: #fff;
+	position: relative;
+	float: left;
+	overflow: hidden;
+	width: 100%;
+	background: #1d1d22;
+	text-align: center;
+	margin-bottom: 20px
+}
+figure.recipe * {
+	-webkit-box-sizing: padding-box;
+	box-sizing: padding-box;
+	-webkit-transition: all .3s ease-out;
+	transition: all .3s ease-out
+}
+figure.recipe img {
+	opacity: 1;
+	width: 100%
+}
+figure.recipe figcaption {
+	top: 50%;
+	left: 40px;
+	right: 40px;
+	position: absolute;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%)
+}
+
+@media (max-width:767px) {
+figure.recipe figcaption {
+	top: 50%;
+	left: 20px;
+	right: 20px;
+	position: absolute;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%)
+}
+figure.recipe figcaption p.recipe-description {
+	font-size: 16px
+}
+}
+figure.recipe figcaption p.accent, figure.recipe figcaption p.span {
+	position: relative;
+	font-size: 16px;
+	font-weight: 400;
+	text-transform: uppercase;
+	margin: 0;
+	-webkit-transform: translateY(75%);
+	transform: translateY(75%)
+}
+figure.recipe figcaption p.recipe-description {
+	font-size: 18px
+}
+figure.recipe figcaption p {
+	font-size: 1em;
+	font-weight: 500;
+	opacity: 0;
+	margin: 0
+}
+figure.recipe:before, figure.recipe:after {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	bottom: 10px;
+	left: 10px;
+	content: '';
+	opacity: 0;
+	-webkit-transition: opacity 0.6s, -webkit-transform .6s;
+	transition: opacity 0.6s, -webkit-transform 0.6s, -moz-transform 0.6s, -o-transform 0.6s, transform .6s
+}
+figure.recipe:before {
+	border-top: 1px double #ede8e1;
+	border-bottom: 1px double #ede8e1;
+	-webkit-transform: scale(0, 1);
+	transform: scale(0, 1)
+}
+figure.recipe:after {
+	border-right: 1px double #ede8e1;
+	border-left: 1px double #ede8e1;
+	-webkit-transform: scale(1, 0);
+	transform: scale(1, 0)
+}
+figure.recipe:hover img, figure.recipe:focus img, figure.recipe.hover img {
+	opacity: .2;
+	-webkit-filter: blur(5px);
+	filter: blur(5px);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1)
+}
+figure.recipe:hover figcaption h2, figure.recipe:focus figcaption h2, figure.recipe.hover figcaption h2, figure.recipe:hover figcaption p, figure.recipe:focus figcaption p, figure.recipe.hover figcaption p {
+	opacity: 1;
+	border-color: rgba(255,255,255,0.5);
+	-webkit-transition-delay: .2s;
+	transition-delay: .2s;
+	-webkit-transform: translateY(0);
+	transform: translateY(0)
+}
+figure.recipe:hover figcaption p, figure.recipe.hover figcaption p {
+	-webkit-transition-delay: .3s;
+	transition-delay: .3s
+}
+figure.recipe:hover:before, figure.recipe.hover:before, figure.recipe:hover:after, figure.recipe.hover:after {
+	opacity: .8;
+	-webkit-transform: scale(1);
+	transform: scale(1)
+}
+
+/* ---------------------------
+11. Good Food CTA /Home Page/
+-----------------------------*/
+section#goodfood-cta {
+	text-align: center;
+	padding: 150px 0
+}
+section#goodfood-cta {
+	background: url(../img/backgrounds/good-food-cta-background.jpg);
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+section#goodfood-cta h3 {
+	font-size: 32px;
+	color: #FFFFFF
+}
+section#goodfood-cta p {
+	font-size: 52px;
+	color: #FFFFFF
+}
+
+@media (max-width: 767px) {
+section#goodfood-cta {
+	padding: 50px 0
+}
+section#goodfood-cta p {
+	font-size: 24px;
+}
+}
+
+/* ---------------------------
+12. Events /Home Page/
+-----------------------------*/
+section#events {
+	text-align: center;
+	background: #f8f8f8
+}
+section#events p {
+	margin-top: 30px;
+}
+
+/* ---------------------------
+13. Food Blog /Home Page/
+-----------------------------*/
+section#foodblog {
+	background: #f2eee8
+}
+section#foodblog .food-blog-item {
+	margin: 40px 0
+}
+section#foodblog .food-blog-item h2 {
+	text-transform: uppercase;
+	font-size: 21px;
+	font-weight: 500;
+	letter-spacing: 1px
+}
+section#foodblog .food-blog-item p {
+	margin-top: 20px;
+}
+
+/* ---------------------------
+14. Newsletter
+-----------------------------*/
+section#newsletter {
+	padding: 50px 0;
+	background: #0a0909;
+	color: #FFF;
+	text-align: center
+}
+section#newsletter p {
+	font-size:12px;
+	letter-spacing:1px;
+	text-transform:uppercase;}
+
+section#newsletter h3 {
+	text-transform: uppercase;
+	margin-bottom: 20px
+}
+section#newsletter .form-control {
+	display: block;
+	width: 100%;
+	height: 36px;
+	padding: 6px 12px;
+	font-size: 14px;
+	line-height: 1.42857143;
+	color: #FFF;
+	background-color: transparent;
+	background-image: none;
+	border: 2px solid #FFF;
+	border-radius: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	-webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+	-o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+	transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s
+}
+section#newsletter .input-group-btn:last-child > .btn, .input-group-btn:last-child > .btn-group {
+	z-index: 2;
+	margin-left: -2px;
+}
+
+/* ---------------------------
+15. Reservations
+-----------------------------*/
+section#reservations {
+	text-align: center;
+	background: #f8f8f8
+}
+section#reservations .form-control {
+	display: block;
+	width: 100%;
+	height: 36px;
+	padding: 6px 12px;
+	font-size: 14px;
+	line-height: 1.42857143;
+	color: #555;
+	background-color: transparent;
+	background-image: none;
+	border: 2px solid #0a0909;
+	border-radius: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	-webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+	-o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+	transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s
+}
+section#reservations .form-control:focus {
+	border-color: #757575;
+	outline: 0; 
+	-webkit-box-shadow: none;
+	box-shadow: none
+}
+section#reservations .help-block  {
+text-align: left;}
+section#reservations .help-block ul  {
+    font-size: 11px;
+    list-style-type: none;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+	padding-left:0;
+	color: #dea72d;
+	margin-bottom: -15px;
+}
+
+
+section#reservations form .alert-danger {
+    color: #dea72d;
+    background-color: #0a0909;
+    border-color: #0a0909;
+	border-radius:0;
+	font-size: 16px;
+}
+
+section#reservations .close {
+  float: right;
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 1;
+  color: #FFF;
+  text-shadow:none;
+  opacity: 1;
+  filter: alpha(opacity=100);
+  margin-top: -14px;
+}
+section#reservations .close:hover,
+section#reservations .close:focus {
+  color: #FFF;
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+section#reservations .alert-success {
+  background-color: #dea72d;
+  border-color: #dea72d;
+  color: #0a0909;
+}
+
+
+
+
+section#reservations textarea.form-control {
+	height: 158px
+}
+section#reservations .form-control::-moz-placeholder {
+color:#0a0909;
+opacity:1
+}
+section#reservations .form-control:-ms-input-placeholder {
+color:#0a0909
+}
+section#reservations .form-control::-webkit-input-placeholder {
+color:#0a0909
+}
+section#reservation-info {
+	background: #0a0909;
+	padding: 15px 0 10px;
+	color: #f2eee8;
+	text-align: center
+}
+section#reservation-info h3 {
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 16px;
+	color: #dea72d
+}
+
+/* ---------------------------
+16.1. Starters
+-----------------------------*/
+section#starters {
+	background: #f8f8f8
+}
+section#starters .menu-box {
+	margin-bottom: 20px;
+	border-bottom: 1px solid #0a0909;
+	padding-bottom: 20px
+}
+section#starters .menu-box:last-child {
+	margin-bottom: 20px;
+	border-bottom: 0px dashed #ccc;
+	padding-bottom: 20px
+}
+section#starters .menu-box .menu-list-item {
+	display: block;
+	clear: both;
+	text-align: left;
+}
+section#starters .menu-list-item h5 {
+	font-size: 21px;
+	line-height: 24px;
+	vertical-align: bottom;
+	font-weight: 500;
+	float: left;
+	max-width: 80%;
+	padding-right: 5px;
+	margin-bottom: 5px;
+	text-transform: uppercase
+}
+section#starters .menu-box .menu-list-item p.price {
+	color: #dea72d;
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: 500;
+	display: inline-block;
+	vertical-align: bottom;
+	float: right;
+	padding-top: 8px;
+	padding-left: 5px;
+	margin-bottom: 10px
+}
+section#starters .menu-box .dashed-line {
+	border-bottom: 1px dashed #0a0909;
+	height: 30px;
+	overflow: hidden;
+	display: block
+}
+section#starters p.dish-description {
+	clear: both;
+	line-height: 28px
+}
+
+/* ---------------------------
+16.2. Salads 
+-----------------------------*/
+section#salads {
+	background: rgba(237,232,225,1)
+}
+section#salads .menu-box {
+	margin-bottom: 20px;
+	border-bottom: 1px solid #0a0909;
+	padding-bottom: 20px
+}
+section#salads .menu-box:last-child {
+	margin-bottom: 20px;
+	border-bottom: 0px dashed #ccc;
+	padding-bottom: 20px
+}
+section#salads .menu-box .menu-list-item {
+	display: block;
+	clear: both;
+	text-align: left;
+}
+section#salads .menu-list-item h5 {
+	font-size: 21px;
+	line-height: 24px;
+	vertical-align: bottom;
+	font-weight: 500;
+	float: left;
+	max-width: 80%;
+	padding-right: 5px;
+	margin-bottom: 5px;
+	text-transform: uppercase
+}
+section#salads .menu-box .menu-list-item p.price {
+	color: #dea72d;
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: 500;
+	display: inline-block;
+	vertical-align: bottom;
+	float: right;
+	padding-top: 8px;
+	padding-left: 5px;
+	margin-bottom: 10px
+}
+section#salads .menu-box .dashed-line {
+	border-bottom: 1px dashed #0a0909;
+	height: 30px;
+	overflow: hidden;
+	display: block
+}
+section#salads p.dish-description {
+	clear: both;
+	line-height: 28px
+}
+
+/* ---------------------------
+16.3. Main Courses
+-----------------------------*/
+section#mains {
+	background: #FFF
+}
+section#mains .menu-box {
+	margin-bottom: 20px;
+	border-bottom: 1px solid #0a0909;
+	padding-bottom: 20px
+}
+section#mains .menu-box:last-child {
+	margin-bottom: 20px;
+	border-bottom: 0px dashed #ccc;
+	padding-bottom: 20px
+}
+section#mains .menu-box .menu-list-item {
+	display: block;
+	clear: both;
+	text-align: left;
+}
+section#mains .menu-list-item h5 {
+	font-size: 21px;
+	line-height: 24px;
+	vertical-align: bottom;
+	font-weight: 500;
+	float: left;
+	max-width: 80%;
+	padding-right: 5px;
+	margin-bottom: 5px;
+	text-transform: uppercase
+}
+section#mains .menu-box .menu-list-item p.price {
+	color: #dea72d;
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: 500;
+	display: inline-block;
+	vertical-align: bottom;
+	float: right;
+	padding-top: 8px;
+	padding-left: 5px;
+	margin-bottom: 10px
+}
+section#mains .menu-box .dashed-line {
+	border-bottom: 1px dashed #0a0909;
+	height: 30px;
+	overflow: hidden;
+	display: block
+}
+section#mains p.dish-description {
+	clear: both;
+	line-height: 28px
+}
+
+/* ---------------------------
+16.4. Desserts
+-----------------------------*/
+section#desserts {
+	background: rgba(237,232,225,1)
+}
+section#desserts .menu-box {
+	margin-bottom: 20px;
+	border-bottom: 1px solid #0a0909;
+	padding-bottom: 20px
+}
+section#desserts .menu-box:last-child {
+	margin-bottom: 20px;
+	border-bottom: 0px dashed #ccc;
+	padding-bottom: 20px
+}
+section#desserts .menu-box .menu-list-item {
+	display: block;
+	clear: both;
+	text-align: left;
+}
+section#desserts .menu-list-item h5 {
+	font-size: 21px;
+	line-height: 24px;
+	vertical-align: bottom;
+	font-weight: 500;
+	float: left;
+	max-width: 80%;
+	padding-right: 5px;
+	margin-bottom: 5px;
+	text-transform: uppercase
+}
+section#desserts .menu-box .menu-list-item p.price {
+	color: #dea72d;
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: 500;
+	display: inline-block;
+	vertical-align: bottom;
+	float: right;
+	padding-top: 8px;
+	padding-left: 5px;
+	margin-bottom: 10px
+}
+section#desserts .menu-box .dashed-line {
+	border-bottom: 1px dashed #0a0909;
+	height: 30px;
+	overflow: hidden;
+	display: block
+}
+section#desserts p.dish-description {
+	clear: both;
+	line-height: 28px
+}
+
+/* ---------------------------
+17. All Recipes Page	
+-----------------------------*/
+section#recipes-all {
+	text-align: center;
+	background: rgba(237,232,225,1)
+}
+section#recipes-all .recipe-wrap {
+	background: #FFF;
+	text-align: left
+}
+section#recipes-all .recipe-wrap .inner-rp-box {
+	padding: 20px;
+	margin-bottom: 30px
+}
+section#recipes-all .recipe-wrap .inner-rp-box h3 {
+	text-transform: uppercase;
+	font-size: 20px
+}
+section#recipes-all .recipe-wrap .inner-rp-box h4 {
+	text-transform: uppercase;
+	font-size: 16px
+}
+section#recipes-all .recipe-wrap .cooking-time {
+	background: #d8caab;
+	z-index: 2;
+	position: relative;
+	padding: 20px 0;
+	margin-top: -40px;
+	bottom: 0px;
+}
+section#recipes-all .recipe-wrap .cooking-time p {
+	position: relative;
+	font-size: 16px;
+	color: #0a0909;
+	margin-top: -10px;
+	margin-left: 20px;
+	text-transform: uppercase;
+	font-weight: 500;
+	z-index: 1;
+	margin-bottom: -10px;
+}
+section#recipes-all .pager {
+	padding-left: 0;
+	margin: 20px 0;
+	list-style: none;
+	text-align: center;
+}
+section#recipes-all .pager li {
+	display: inline;
+	text-transform: uppercase;
+	font-weight: 600
+}
+section#recipes-all .pager li > a, section#recipes-all .pager li > span {
+	display: inline-block;
+	padding: 5px 14px;
+	background-color: transparent;
+	border: 2px solid #0a0909;
+	border-radius: 0px;
+}
+section#recipes-all .pager li > a:hover, section#recipes-all .pager li > a:focus {
+	text-decoration: none;
+	background-color: #0a0909;
+	color: #FFF
+}
+section#recipes-all .pager .next > a, section#recipes-all .pager .next > span {
+	float: right;
+}
+section#recipes-all .pager .previous > a, section#recipes-all .pager .previous > span {
+	float: left;
+}
+section#recipes-all .pager .disabled > a, section#recipes-all .pager .disabled > a:hover, section#recipes-all .pager .disabled > a:focus, section#recipes-all .pager .disabled > span {
+	color: #777777;
+	background-color: #fff;
+	cursor: not-allowed;
+}
+
+/* ---------------------------
+18. Single Recipe Page
+-----------------------------*/
+section#single-recipe {
+	background: rgba(237,232,225,1);
+}
+section#single-recipe .recipe-wrap {
+	background: #f5f5f5;
+	text-align: left
+}
+section#single-recipe .recipe-wrap .inner-rp-box {
+	padding: 20px;
+	margin-bottom: 30px
+}
+section#single-recipe .recipe-wrap .inner-rp-box h2 {
+	text-transform: uppercase;
+	font-size: 28px
+}
+section#single-recipe .recipe-wrap .inner-rp-box h3 {
+	text-transform: uppercase;
+	font-size: 20px
+}
+section#single-recipe .recipe-wrap .inner-rp-box h4 {
+	text-transform: uppercase;
+	font-size: 16px;
+	color: #dea72d;
+}
+section#single-recipe .recipe-wrap .inner-rp-box h5 {
+	text-transform: uppercase;
+	font-size: 14px;
+	color: #dea72d;
+}
+section#single-recipe .recipe-wrap .inner-rp-box hr.border-btm {
+	max-width: 50px;
+	border-color: #0a0909;
+	border-width: 2px;
+	margin: 0;
+	margin-top: 5px;
+	margin-bottom: 10px
+}
+section#single-recipe .recipe-wrap .inner-rp-box ul.list-unstyled {
+	margin: 0 0 25px 0;
+}
+section#single-recipe .recipe-wrap .inner-rp-box ul.list-unstyled li {
+	font-size: 16px;
+}
+section#single-recipe .recipe-wrap .cooking-time {
+	background: #d8caab;
+	z-index: 2;
+	position: relative;
+	padding: 20px 0;
+	margin-top: -40px;
+	bottom: 0px;
+}
+section#single-recipe .recipe-wrap .cooking-time p {
+	position: relative;
+	font-size: 16px;
+	color: #0a0909;
+	margin-top: -10px;
+	margin-left: 20px;
+	text-transform: uppercase;
+	font-weight: 500;
+	z-index: 1;
+	margin-bottom: -10px;
+}
+section#single-recipe .blog-book {
+	background: url(../img/foodblog/blog-bg-book-now.jpg);
+	background-position: left bottom;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+section#single-recipe .blog-book {
+	padding: 20px;
+	min-height: 300px;
+	margin-bottom: 20px
+}
+section#single-recipe .blog-book h3 {
+	font-size: 21px;
+	color: #FFF;
+	text-transform: uppercase
+}
+section#single-recipe #siderbar-recipe01, section#single-recipe #siderbar-recipe02 {
+	background-position: left bottom;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+	color: #FFF;
+}
+section#single-recipe #siderbar-recipe01, section#single-recipe #siderbar-recipe02 {
+	padding: 20px;
+	min-height: 300px;
+	margin-bottom: 20px
+}
+section#single-recipe #siderbar-recipe01 h4, section#single-recipe #siderbar-recipe02 h4 {
+	text-transform: uppercase;
+	font-size: 18px
+}
+section#single-recipe #sidebar-newsletter {
+	padding: 20px;
+	background: #0a0909;
+	color: #FFF;
+}
+section#single-recipe h4 {
+	text-transform: uppercase;
+	margin-bottom: 20px
+}
+section#single-recipe .form-control {
+	display: block;
+	width: 100%;
+	height: 36px;
+	padding: 6px 12px;
+	font-size: 18px;
+	line-height: 1.42857143;
+	color: #FFF;
+	background-color: transparent;
+	background-image: none;
+	border: 2px solid #FFF;
+	border-radius: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	-webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+	-o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+	transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s
+}
+section#single-recipe .input-group-btn:last-child > .btn, .input-group-btn:last-child > .btn-group {
+	z-index: 2;
+	margin-left: -2px;
+}
+section#single-recipe .recipe01 {
+	background: url(../img/foodblog/blog-bg-recipe01.jpg);
+}
+section#single-recipe .recipe02 {
+	background: url(../img/foodblog/blog-bg-recipe02.jpg);
+}
+
+/* ---------------------------
+19. Blog Page
+-----------------------------*/
+section#blog {
+	background: rgba(237,232,225,1)
+}
+section#blog .blog-item {
+	margin-bottom: 50px;
+	background: #FFF;
+	text-align: left
+}
+section#blog .blog-item .inner-blog-box {
+	padding: 20px;
+	margin-bottom: 30px
+}
+section#blog .blog-item h3 {
+	text-transform: uppercase;
+	color: #dea72d;
+}
+section#blog .blog-item ul.list-inline {
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+	padding: 10px 0;
+	margin-top: 20px
+}
+section#blog .blog-item ul.list-inline li {
+	text-transform: uppercase
+}
+section#blog .blog-book {
+	background: url(../img/foodblog/blog-bg-book-now.jpg);
+	background-position: left bottom;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+section#blog .blog-book {
+	padding: 20px;
+	min-height: 300px;
+	margin-bottom: 20px
+}
+section#blog .blog-book h3 {
+	font-size: 21px;
+	color: #FFF;
+	text-transform: uppercase
+}
+section#blog #siderbar-recipe01, section#blog #siderbar-recipe02 {
+	background-position: left bottom;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+	color: #FFF;
+}
+section#blog #siderbar-recipe01, section#blog #siderbar-recipe02 {
+	padding: 20px;
+	min-height: 300px;
+	margin-bottom: 20px
+}
+section#blog #siderbar-recipe01 h4, section#blog #siderbar-recipe02 h4 {
+	text-transform: uppercase;
+	font-size: 18px
+}
+section#blog #sidebar-newsletter {
+	padding: 20px;
+	background: #0a0909;
+	color: #FFF;
+}
+section#blog h4 {
+	text-transform: uppercase;
+	margin-bottom: 20px
+}
+section#blog .form-control {
+	display: block;
+	width: 100%;
+	height: 36px;
+	padding: 6px 12px;
+	font-size: 18px;
+	line-height: 1.42857143;
+	color: #FFF;
+	background-color: transparent;
+	background-image: none;
+	border: 2px solid #FFF;
+	border-radius: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	-webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+	-o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+	transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s
+}
+section#blog .input-group-btn:last-child > .btn, .input-group-btn:last-child > .btn-group {
+	z-index: 2;
+	margin-left: -2px;
+}
+section#blog .recipe01 {
+	background: url(../img/foodblog/blog-bg-recipe01.jpg);
+}
+section#blog .recipe02 {
+	background: url(../img/foodblog/blog-bg-recipe02.jpg);
+}
+section#blog .pager {
+	padding-left: 0;
+	margin: 20px 0;
+	list-style: none;
+	text-align: center;
+}
+section#blog .pager li {
+	display: inline;
+	text-transform: uppercase;
+	font-weight: 600
+}
+section#blog .pager li > a, section#blog .pager li > span {
+	display: inline-block;
+	padding: 5px 14px;
+	background-color: transparent;
+	border: 2px solid #0a0909;
+	border-radius: 0px;
+}
+section#blog .pager li > a:hover, section#blog .pager li > a:focus {
+	text-decoration: none;
+	background-color: #0a0909;
+	color: #FFF
+}
+section#blog .pager .next > a, section#blog .pager .next > span {
+	float: right;
+}
+section#blog .pager .previous > a, section#blog .pager .previous > span {
+	float: left;
+}
+section#blog .pager .disabled > a, section#blog .pager .disabled > a:hover, section#blog .pager .disabled > a:focus, section#blog .pager .disabled > span {
+	color: #777777;
+	background-color: #fff;
+	cursor: not-allowed;
+}
+
+/* ---------------------------
+20. Events Page
+-----------------------------*/
+section#events-page {
+	text-align: center;
+	background: #fbf6eb
+}
+section#events-page .event-item {
+	margin-bottom: 40px;
+}
+section#events-page .event-item h3 {
+	text-transform: uppercase;
+	margin-top: 10px;
+}
+section#events-page p {
+	margin-top: 30px;
+}
+#rsvpform .form-control {
+	display: block;
+	width: 100%;
+	height: 36px;
+	padding: 6px 12px;
+	font-size: 14px;
+	line-height: 1.42857143;
+	color: #555;
+	background-color: transparent;
+	background-image: none;
+	border: 2px solid #0a0909;
+	border-radius: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	-webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+	-o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+	transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s
+}
+#rsvpform .form-control:focus {
+	border-color: #757575;
+	outline: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none
+}
+#rsvpform textarea.form-control {
+	height: 87px
+}
+#rsvpform .form-control::-moz-placeholder {
+color:#0a0909;
+opacity:1
+}
+#rsvpform .form-control:-ms-input-placeholder {
+color:#0a0909
+}
+#rsvpform .form-control::-webkit-input-placeholder {
+color:#0a0909
+}
+#rsvpform .modal-content {
+	border-radius: 0
+}
+#rsvpform .modal-body {
+	padding: 0 15px 15px 15px
+}
+
+/* ---------------------------
+21. Wines Page /Wine Sections/
+-----------------------------*/
+section#wine-sect-01, section#wine-sect-02, section#wine-sect-03 {
+}
+section#wine-sect-01, section#wine-sect-02, section#wine-sect-03 {
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+	text-align: center;
+}
+section#wine-sect-01 .wine-item-box, section#wine-sect-02 .wine-item-box, section#wine-sect-03 .wine-item-box {
+	background: rgba(10,9,9,0.95);
+	color: #FFF
+}
+section#wine-sect-01 .wine-inner-box, section#wine-sect-02 .wine-inner-box, section#wine-sect-03 .wine-inner-box {
+	padding: 50px;
+}
+section#wine-sect-01 h2, section#wine-sect-02 h2, section#wine-sect-03 h2 {
+	color: #FFF
+}
+section#wine-sect-01 span, section#wine-sect-02 span, section#wine-sect-03 span {
+	color: #dea72d
+}
+.wine-section-01 {
+	background: url(../img/backgrounds/wine-backgrounds/wine-bg-01.jpg)
+}
+.wine-section-02 {
+	background: url(../img/backgrounds/wine-backgrounds/wine-bg-03.jpg)
+}
+.wine-section-03 {
+	background: url(../img/backgrounds/wine-backgrounds/wine-bg-02.jpg)
+}
+
+/* ---------------------------
+22.1. Labels
+-----------------------------*/
+.label-special {
+	text-transform: uppercase;
+	color: #0a0909;
+	background: #dea72d;
+	letter-spacing: 1px;
+	font-size: 9px;
+	border-radius: 0;
+	padding: .4em .6em .4em;
+	position: relative;
+	top: -4px;
+}
+.label-seasonal {
+	text-transform: uppercase;
+	color: #dea72d;
+	background: #0a0909;
+	letter-spacing: 1px;
+	font-size: 9px;
+	border-radius: 0;
+	padding: .4em .6em .4em;
+	position: relative;
+	top: -4px;
+}
+
+/* ---------------------------
+22.2  Buttons
+-----------------------------*/
+/* Ghost Button White */
+.ghost-white {
+	margin: 0 auto;
+	letter-spacing: 1px;
+}
+/* Gray Ghost Button */
+.ghost-white {
+	background-color: transparent;
+	border: 2px solid #FFFFFF;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	font-weight: 500;
+	border-radius: 0;
+	white-space: nowrap;
+}
+.ghost-white.focus, .ghost-white:focus, .ghost-white:hover {
+	background-color: #FFFFFF;
+	border: 2px solid #FFFFFF;
+	color: #1d1d22;
+	text-decoration: none;
+}
+/* Ghost Button Dark */
+.ghost-darkblue {
+	margin: 0 auto;
+	letter-spacing: 1px;
+	;
+}
+/* Gray Ghost Button */
+.ghost-darkblue {
+	background-color: transparent;
+	border: 2px solid #0a0909;
+	color: #0a0909;
+	text-transform: uppercase;
+	font-weight: 500;
+	border-radius: 0;
+	white-space: nowrap;
+}
+.ghost-darkblue.focus, .ghost-darkblue:focus, .ghost-darkblue:hover {
+	background-color: #0a0909;
+	border: 2px solid #0a0909;
+	color: #FFF;
+	text-decoration: none;
+}
+/* Full Dark Button */
+.full-light {
+	margin: 0 auto;
+	letter-spacing: 1px;
+	;
+}
+/* Gray Ghost Button */
+.full-light {
+	background-color: #dea72d;
+	border: 2px solid #dea72d;
+	color: #0a0909;
+	text-transform: uppercase;
+	font-weight: 500;
+	border-radius: 0;
+	white-space: nowrap;
+}
+.full-light.focus, .full-ligh:focus, .full-light:hover {
+	background-color: #b89442;
+	border: 2px solid #b89442;
+	color: #0a0909;
+	text-decoration: none;
+}
+
+/* ---------------------------
+22.3. Paddings
+-----------------------------*/
+.no-padding {
+	padding: 0;
+}
+.pddn-neg-10-top {
+	padding-top: -10px
+}
+.pddn-0 {
+	padding: 0px !important
+}
+.pddn-10 {
+	padding: 10px
+}
+.pddn-20 {
+	padding: 20px
+}
+.pddn-30 {
+	padding: 30px
+}
+.pddn-40 {
+	padding: 40px
+}
+.pddn-50 {
+	padding: 50px
+}
+.pddn-60 {
+	padding: 60px
+}
+.pddn-10-top {
+	padding-top: 10px
+}
+.pddn-20-top {
+	padding-top: 20px
+}
+.pddn-30-top {
+	padding-top: 30px
+}
+.pddn-40-top {
+	padding-top: 40px
+}
+.pddn-50-top {
+	padding-top: 50px
+}
+.pddn-60-top {
+	padding-top: 60px
+}
+.pddn-10-btm {
+	padding-bottom: 10px
+}
+.pddn-20-btm {
+	padding-bottom: 20px
+}
+.pddn-30-btm {
+	padding-bottom: 30px
+}
+.pddn-40-btm {
+	padding-bottom: 40px
+}
+.pddn-50-btm {
+	padding-bottom: 50px
+}
+.pddn-60-btm {
+	padding-bottom: 60px
+}
+.pddn-0-top-btm {
+	padding: 0
+}
+.pddn-10-top-btm {
+	padding: 10px 0
+}
+.pddn-20-top-btm {
+	padding: 20px 0
+}
+.pddn-30-top-btm {
+	padding: 30px 0
+}
+.pddn-40-top-btm {
+	padding: 40px 0
+}
+.pddn-50-top-btm {
+	padding: 50px 0
+}
+.pddn-60-top-btm {
+	padding: 60px 0
+}
+.pddn-70-top-btm {
+	padding: 70px 0
+}
+.pddn-80-top-btm {
+	padding: 80px 0
+}
+.pddn-90-top-btm {
+	padding: 90px 0
+}
+.pddn-100-top-btm {
+	padding: 100px 0
+}
+
+/* ---------------------------
+22.4. Margins
+-----------------------------*/
+.mrgn-10-top {
+	margin-top: 10px
+}
+.mrgn-15-top {
+	margin-top: 15px
+}
+.mrgn-20-top {
+	margin-top: 20px
+}
+.mrgn-30-top {
+	margin-top: 30px
+}
+.mrgn-40-top {
+	margin-top: 40px
+}
+.mrgn-50-top {
+	margin-top: 50px
+}
+.mrgn-60-top {
+	margin-top: 60px
+}
+.mrgn-70-top {
+	margin-top: 70px
+}
+.mrgn-80-top {
+	margin-top: 80px
+}
+.mrgn-90-top {
+	margin-top: 90px
+}
+.mrgn-100-top {
+	margin-top: 100px
+}
+.mrgn-10-btm {
+	margin-bottom: 10px
+}
+.mrgn-20-btm {
+	margin-bottom: 20px
+}
+.mrgn-30-btm {
+	margin-bottom: 30px
+}
+.mrgn-40-btm {
+	margin-bottom: 40px
+}
+.mrgn-50-btm {
+	margin-bottom: 50px
+}
+.mrgn-60-btm {
+	margin-bottom: 60px
+}
+.mrgn-10-top-btm {
+	margin: 10px 0
+}
+.mrgn-20-top-btm {
+	margin: 20px 0
+}
+.mrgn-30-top-btm {
+	margin: 30px 0
+}
+.mrgn-40-top-btm {
+	margin: 40px 0
+}
+.mrgn-50-top-btm {
+	margin: 50px 0
+}
+.mrgn-60-top-btm {
+	margin: 60px 0
+}
+
+/* ---------------------------
+22.5. Back To Top Link
+-----------------------------*/
+#top-link-block.affix-top {
+	position: absolute;
+	bottom: -82px;
+	right: 20px;
+}
+#top-link-block.affix {
+	position: fixed;
+	bottom: 30px;
+	right: 20px;
+	background-color: #dea72d;
+}
+#top-link-block .well-sm {
+	padding: 5px 10px;
+	border-radius: 0px;
+}
+#top-link-block .well {
+	min-height: 20px;
+	margin-bottom: 20px;
+	color: #FFF;
+	font-weight: 300;
+	font-size: 18px;
+	background-color: #dea72d;
+	border: 1px solid #dea72d;
+	border-radius: 0px;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+
